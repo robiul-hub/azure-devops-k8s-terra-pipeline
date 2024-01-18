@@ -21,7 +21,7 @@ public class CurrencyExchangeController {
 	private ExchangeValueRepository repository;
 
 	@Autowired
-	private InstanceInformationService instanceInformationService;
+	private InstanceInformationService instanceInformationService.class;
 
 	@GetMapping("/")
 	public String imHealthy() {
