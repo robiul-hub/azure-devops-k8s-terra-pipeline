@@ -2,8 +2,15 @@
 trigger:
 - master
 
+strategy:
+  matrix:
+    linux: 
+      operatingSystem: 'ubuntu-latest'
+    windows:
+      operatingSystem: 'windows-latest'
+
 pool:
-  vmImage: ubuntu-latest
+  vmImage: $(operatingSystem)
 
 stages:
 - stage: Build
