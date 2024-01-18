@@ -43,7 +43,7 @@ public class CurrencyExchangeController {
 			throw new RuntimeException("Unable to find data to convert " + from + " to " + to);
 		}
 
-		exchangeValue.setExchangeEnvironmentInfo(instanceInformationService.retrieveInstanceInfo());
+//		exchangeValue.setExchangeEnvironmentInfo(instanceInformationService.retrieveInstanceInfo());
 
 		return exchangeValue;
 	}
