@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
-#import com.in28minutes.microservices.currencyexchangeservice.util.environment.InstanceInformationService;
+##import com.in28minutes.microservices.currencyexchangeservice.util.environment.InstanceInformationService;
 
 @RestController
 public class CurrencyExchangeController {
@@ -21,7 +21,7 @@ public class CurrencyExchangeController {
 	private ExchangeValueRepository repository;
 
 	@Autowired
-#	private InstanceInformationService instanceInformationService;
+##	private InstanceInformationService instanceInformationService;
 
 	@GetMapping("/")
 	public String imHealthy() {
