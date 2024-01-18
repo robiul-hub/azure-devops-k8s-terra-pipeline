@@ -15,23 +15,23 @@ stages:
   - job: SecondJob
     steps:
     - bash: echo Build SecondJob
-- stage: DevDeploy
-  variables:
-    env: Dev
-  jobs: 
-  - job: DevDeployJob
-    steps:
-    - bash: echo $(env)Deploy Devjob
-- stage: QADeploy
-  jobs: 
-  - job: QADeployJob
-    steps:
-    - bash: echo QADeploy fisrtjob
-- stage: ProdDeploy
-  jobs: 
-  - job: ProdDeployJob
-    steps:
-    - bash: echo ProdDeploy fisrtjob
+# - stage: DevDeploy
+#   variables:
+#     env: Dev
+#   jobs: 
+#   - job: DevDeployJob
+#     steps:
+#     - bash: echo $(env)Deploy Devjob
+# - stage: QADeploy
+#   jobs: 
+#   - job: QADeployJob
+#     steps:
+#     - bash: echo QADeploy fisrtjob
+# - stage: ProdDeploy
+#   jobs: 
+#   - job: ProdDeployJob
+#     steps:
+#     - bash: echo ProdDeploy fisrtjob
 
 
 
