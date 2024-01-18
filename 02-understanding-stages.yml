@@ -11,14 +11,17 @@ stages:
   - job: FirstJob
     steps:
     - bash: echo Build fisrtjob
+    - bash: echo $(PipelineLavelBariable)
   - job: SecondJob
     steps:
     - bash: echo Build SecondJob
 - stage: DevDeploy
+  variables:
+    env: Dev
   jobs: 
   - job: DevDeployJob
     steps:
-    - bash: echo DevDeploy fisrtjob
+    - bash: echo $(env)Deploy Devjob
 - stage: QADeploy
   jobs: 
   - job: QADeployJob
