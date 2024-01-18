@@ -12,6 +12,10 @@ stages:
     steps:
     - bash: echo Build fisrtjob
     - bash: echo $(PipelineLavelBariable)
+    - bash: echo $(Build.BuildNumber)
+    - bash: echo $(Build.BuildId)
+    - bash: echo $(Build.SourcesDirectory)
+    - bash: echo $(Build.SourceBranchName)
   - job: SecondJob
     steps:
     - bash: echo Build SecondJob
